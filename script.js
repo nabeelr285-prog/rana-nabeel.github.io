@@ -307,19 +307,49 @@ function initContactForm() {
 
     form.addEventListener("submit", (e) => {
         e.preventDefault();
+        
         const btn = form.querySelector(".form-submit-btn");
         const origText = btn.textContent;
         
+        // Visual UX change for premium feel
         btn.textContent = "Processing Stream Network Payload...";
         btn.disabled = true;
 
-        setTimeout(() => {
-            btn.textContent = "Pipeline Connection Operational!";
-            form.reset();
+        const formData = new FormData(form);
+        const object = Object.fromEntries(formData);
+        const json = JSON.stringify(object);
+
+        // Fetch transmission gateway hit
+        fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: json
+        })
+        .then(async (response) => {
+            let res = await response.json();
+            if (response.status == 200) {
+                // Success State Execution
+                btn.textContent = "Pipeline Connection Operational!";
+                form.reset();
+            } else {
+                console.log(res);
+                btn.textContent = "Routing Failure Detected";
+                alert("Error: " + res.message);
+            }
+        })
+        .catch(error => {
+            console.log(error);
+            btn.textContent = "System Interrupt Error";
+        })
+        .then(() => {
+            // Button restore function metrics
             setTimeout(() => {
                 btn.textContent = origText;
                 btn.disabled = false;
             }, 3000);
-        }, 1500);
+        });
     });
 }
