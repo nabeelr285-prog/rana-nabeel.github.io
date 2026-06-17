@@ -275,28 +275,44 @@
             </div>
         </section>
 
-        <section id="contact" class="contact-section section-padding">
-            <div class="container">
-                <h2 class="section-title">Initiate Strategic Connection</h2>
-                <div class="contact-grid">
-                    <div class="contact-info-panel glass-card">
-                        <h3>Direct Operational Directives</h3>
-                        <p>Reach out to discuss full-time roles, strategic analytics consulting, or structural database optimization projects.</p>
-                        <div class="info-links-list">
-                            <div class="info-item-link"><i class="fas fa-envelope"></i><span>Nabeelr285@gmail.com</span></div>
-                            <div class="info-item-link"><i class="fas fa-phone"></i><span>+92 325 6050170</span></div>
-                            <div class="info-item-link"><i class="fas fa-map-marker-alt"></i><span>Lahore, Pakistan</span></div>
-                        </div>
-                    </div>
-                    <form class="contact-form glass-card" id="portfolio-form">
-                        <div class="form-group"><input type="text" id="form-name" required placeholder=" "><label for="form-name">Name</label></div>
-                        <div class="form-group"><input type="email" id="form-email" required placeholder=" "><label for="form-email">Corporate Email Address</label></div>
-                        <div class="form-group"><textarea id="form-msg" required rows="5" placeholder=" "></textarea><label for="form-msg">Project Framework Brief</label></div>
-                        <button type="submit" class="btn btn-primary form-submit-btn">Send</button>
-                    </form>
+       <section id="contact" class="contact-section section-padding">
+    <div class="container">
+        <h2 class="section-title">Initiate Strategic Connection</h2>
+        <div class="contact-grid">
+            <div class="contact-info-panel glass-card">
+                <h3>Direct Operational Directives</h3>
+                <p>Reach out to discuss full-time roles, strategic analytics consulting, or structural database optimization projects.</p>
+                <div class="info-links-list">
+                    <div class="info-item-link"><i class="fas fa-envelope"></i><span>Nabeelr285@gmail.com</span></div>
+                    <div class="info-item-link"><i class="fas fa-phone"></i><span>+92 325 6050170</span></div>
+                    <div class="info-item-link"><i class="fas fa-map-marker-alt"></i><span>Lahore, Pakistan</span></div>
                 </div>
             </div>
-        </section>
+            
+            <!-- Target Form Core -->
+            <form class="contact-form glass-card" id="portfolio-form">
+                <!-- IMPORTANT: Apni real Web3Forms Access Key 'value' mai dalo -->
+                <input type="hidden" name="access_key" value="dedced30-41c9-427a-a851-27e2d365c65c">
+                <!-- Spambots ko block karne ke liye honey-pot field -->
+                <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+
+                <div class="form-group">
+                    <input type="text" name="name" id="form-name" required placeholder=" ">
+                    <label for="form-name">Name</label>
+                </div>
+                <div class="form-group">
+                    <input type="email" name="email" id="form-email" required placeholder=" ">
+                    <label for="form-email">Corporate Email Address</label>
+                </div>
+                <div class="form-group">
+                    <textarea name="message" id="form-msg" required rows="5" placeholder=" "></textarea>
+                    <label for="form-msg">Project Framework Brief</label>
+                </div>
+                <button type="submit" class="btn btn-primary form-submit-btn">Send</button>
+            </form>
+        </div>
+    </div>
+</section>
     </main>
 
     <footer class="glass-footer">
