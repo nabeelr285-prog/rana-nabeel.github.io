@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rana Muhammad Nabeel | Business Analytics Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body class="dark-mode">
+    <div id="loader">
+        <div class="loader-content">
+            <div class="logo-text">RN</div>
+            <div class="progress-bar"><div class="progress"></div></div>
+        </div>
+    </div>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">RN</div>
+            <ul class="nav-links">
+                <li><a href="#hero" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#timeline">Journey</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Toggle Theme"><i class="fas fa-sun"></i></button>
+                <div class="menu-btn"><div class="menu-btn__burger"></div></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div id="three-canvas-container"></div>
+            <div class="hero-content">
+                <h1 class="glitch" data-text="RANA MUHAMMAD NABEEL">RANA MUHAMMAD NABEEL</h1>
+                <h2>I am a <span class="typewriter" data-words='["Business Analyst", "Data Analyst", "Power BI Developer"]'></span></h2>
+                <p class="tagline">Turning Data into Business Insights</p>
+                <div class="cta-group">
+                    <a href="#contact" class="btn btn-primary">Contact Me</a>
+                    <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    <a href="https://i.ibb.co/ksgsspFF/nabeel-cv.jpg" class="btn btn-outline">Download CV</a>
+                </div>
+            </div>
+            <div class="scroll-indicator"><div class="mouse"></div></div>
+        </section>
+
+        <section id="about" class="about-section section-padding">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-grid">
+                    <div class="about-image-wrapper parallax-element" data-speed="0.05">
+                        <img src="https://i.ibb.co/5gk2Q5gc/hero-profile-png.png" alt="Rana Muhammad Nabeel Portrait" class="about-img main-portrait">
+                        <img src="https://i.ibb.co/gMqLzvvz/hero-image-white-bg.png" alt="Executive Portrait" class="about-img full-portrait hidden">
+                    </div>
+                    <div class="about-text-content">
+                        <h3>Business Analytics Student & Strategy Strategist</h3>
+                        <p>Pursuing a BS in Business Analytics at the University of Central Punjab (Graduation 2027), I bridge the gap between complex data architectures and strategic corporate execution. My approach transforms raw enterprise variables into interactive visual intelligence infrastructure.</p>
+                        <div class="stats-grid">
+                            <div class="stat-card counter-box">
+                                <span class="counter" data-target="15">0</span><span class="suffix">+</span>
+                                <p>Academic & Independent Projects</p>
+                            </div>
+                            <div class="stat-card counter-box">
+                                <span class="counter" data-target="99">0</span><span class="suffix">%</span>
+                                <p>Visualization Accuracy</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Technical Expertise</h2>
+                <div class="skills-grid">
+                    <div class="skill-category glass-card">
+                        <h3>Core Architecture</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Power BI & DAX</span><span class="skill-percentage">95%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>SQL (Query Optimization)</span><span class="skill-percentage">90%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Python (Pandas / NumPy)</span><span class="skill-percentage">85%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="85%"></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category glass-card">
+                        <h3>Analytical Modeling</h3>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Data Visualization & Reporting</span><span class="skill-percentage">95%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="95%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Business Intelligence Strategy</span><span class="skill-percentage">90%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="90%"></div></div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-info"><span>Predictive Analytics</span><span class="skill-percentage">80%</span></div>
+                            <div class="skill-bar-bg"><div class="skill-bar-fill" data-width="80%"></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline" class="timeline-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Academic & Professional Journey</h2>
+                <div class="timeline-container">
+                    <div class="timeline-item glass-card left">
+                        <div class="timeline-content">
+                            <span class="date">2023 - 2027</span>
+                            <h3>BS Business Analytics</h3>
+                            <h4>University of Central Punjab</h4>
+                            <p>Deep foundational alignment in predictive data frameworks, corporate governance, quantitative modeling, and structural optimization metrics.</p>
+                        </div>
+                    </div>
+                    <div class="timeline-item glass-card right">
+                        <div class="timeline-content">
+                            <span class="date">2025 - Present</span>
+                            <h3>Independent Analytics Consultant</h3>
+                            <h4>Freelance Marketplace</h4>
+                            <p>Architecting strategic data storage environments, designing high-conversion execution dashboards, and streamlining fragmented corporate datasets.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Operational Services</h2>
+                <div class="services-grid">
+                    <div class="service-card glass-card glow-effect">
+                        <i class="fas fa-chart-pie service-icon"></i>
+                        <h3>Enterprise Data Architecture</h3>
+                        <p>Constructing scalable multi-tiered infrastructure layers optimized for continuous query streaming and automated structural integrity reporting.</p>
+                    </div>
+                    <div class="service-card glass-card glow-effect">
+                        <i class="fas fa-brain service-icon"></i>
+                        <h3>Predictive Modeling</h3>
+                        <p>Deploying tailored regression algorithms and predictive matrices to evaluate future performance curves and control operational risk.</p>
+                    </div>
+                    <div class="service-card glass-card glow-effect">
+                        <i class="fas fa-display service-icon"></i>
+                        <h3>BI Dashboard Infrastructure</h3>
+                        <p>Developing fully synchronized Power BI monitoring systems to turn disparate executive matrices into clear, unified operational controls.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Projects Showcase</h2>
+                <div class="projects-grid">
+                    <div class="project-card glass-card glow-effect">
+                        <div class="project-image-container">
+                            <img src="https://i.ibb.co/wF8cGJr6/img1.png" alt="Power BI Dashboard Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Supply Chain Optimization Engine</h3>
+                            <p>A Power BI ecosystem transforming standard distribution logs into an automated dynamic tracking network with integrated risk mitigation metrics.</p>
+                            <div class="tech-tags"><span>Power BI</span><span>DAX</span><span>SQL</span></div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-icon"><i class="fab fa-github"></i> Source</a>
+                                <a href="#" class="btn btn-icon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card glow-effect">
+                        <div class="project-image-container">
+                            <img src="https://i.ibb.co/jkmpXL7s/img2.png" alt="Retail Analytics Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Predictive Retail Analytics Platform</h3>
+                            <p>An enterprise-grade forecasting architecture utilizing historical retail transactional patterns to project upcoming regional supply metrics.</p>
+                            <div class="tech-tags"><span>Python</span><span>Pandas</span><span>Scikit-Learn</span></div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-icon"><i class="fab fa-github"></i> Source</a>
+                                <a href="#" class="btn btn-icon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card glass-card glow-effect">
+                        <div class="project-image-container">
+                            <img src="https://i.ibb.co/vCVLrYm5/img3.png" alt="Business Performance Project">
+                        </div>
+                        <div class="project-info">
+                            <h3>Corporate Performance Metrics Interface</h3>
+                            <p>A highly cohesive real-time performance infrastructure built to aggregate granular financial metrics across distributed business environments.</p>
+                            <div class="tech-tags"><span>SQL Server</span><span>Power BI</span><span>ETL Pipeline</span></div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-icon"><i class="fab fa-github"></i> Source</a>
+                                <a href="#" class="btn btn-icon"><i class="fas fa-external-link-alt"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="certifications-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h3>Predictive Project Methodologies</h3>
+                        <p>Project Management Institute (PMI)</p>
+                    </div>
+                    <div class="cert-card glass-card">
+                        <i class="fas fa-certificate cert-icon"></i>
+                        <h3>Agile Project Structures</h3>
+                        <p>Project Management Institute (PMI)</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="resume" class="resume-section section-padding">
+            <div class="container">
+                <div class="resume-wrapper glass-card">
+                    <div class="resume-preview-container">
+                        <img src="https://images.unsplash.com/photo-1586281380349-632531db7ed4?auto=format&fit=crop&w=600&q=80" alt="Resume Preview Asset">
+                    </div>
+                    <div class="resume-action-content">
+                        <h2>Review Strategic Asset Documentation</h2>
+                        <p>Access the fully detailed technical catalog delineating complete engineering proficiencies, deployment timelines, and core analytical frameworks.</p>
+                        <a href="https://i.ibb.co/ksgsspFF/nabeel-cv.jpg" class="btn btn-primary download-trigger"><i class="fas fa-download"></i> Download Curriculum Vitae</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Frequently Questioned Parameters</h2>
+                <div class="faq-accordion-wrapper">
+                    <div class="accordion-item glass-card">
+                        <div class="accordion-header">
+                            <h3>What primary value does an integrated data pipeline yield?</h3>
+                            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-body">
+                            <p>It eliminates systemic silos, transforming disconnected processes into cohesive, auditable analytical pipelines ready for business decisions.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item glass-card">
+                        <div class="accordion-header">
+                            <h3>How is analytical system cross-compatibility maintained?</h3>
+                            <div class="accordion-icon"><i class="fas fa-chevron-down"></i></div>
+                        </div>
+                        <div class="accordion-body">
+                            <p>By enforcing clean ETL structures, strict data mapping definitions, and well-organized SQL layers designed to prevent analytical performance drops.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section section-padding">
+            <div class="container">
+                <h2 class="section-title">Initiate Strategic Connection</h2>
+                <div class="contact-grid">
+                    <div class="contact-info-panel glass-card">
+                        <h3>Direct Operational Directives</h3>
+                        <p>Reach out to discuss full-time roles, strategic analytics consulting, or structural database optimization projects.</p>
+                        <div class="info-links-list">
+                            <div class="info-item-link"><i class="fas fa-envelope"></i><span>Nabeelr285@gmail.com</span></div>
+                            <div class="info-item-link"><i class="fas fa-phone"></i><span>+92 325 6050170</span></div>
+                            <div class="info-item-link"><i class="fas fa-map-marker-alt"></i><span>Lahore, Pakistan</span></div>
+                        </div>
+                    </div>
+                    <form class="contact-form glass-card" id="portfolio-form">
+                        <div class="form-group"><input type="text" id="form-name" required placeholder=" "><label for="form-name">Name</label></div>
+                        <div class="form-group"><input type="email" id="form-email" required placeholder=" "><label for="form-email">Corporate Email Address</label></div>
+                        <div class="form-group"><textarea id="form-msg" required rows="5" placeholder=" "></textarea><label for="form-msg">Project Framework Brief</label></div>
+                        <button type="submit" class="btn btn-primary form-submit-btn">Send</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="glass-footer">
+        <div class="container footer-content-wrapper">
+            <p>&copy; 2026 Rana Muhammad Nabeel. Systems Evaluated under Optimal Architecture.</p>
+            <div class="footer-social-channels">
+                <a href="#" aria-label="LinkedIn Profiles"><i class="fab fa-linkedin"></i></a>
+                <a href="#" aria-label="GitHub Repositories"><i class="fab fa-github"></i></a>
+                <a href="#" aria-label="Digital Framework Vectors"><i class="fas fa-envelope"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
